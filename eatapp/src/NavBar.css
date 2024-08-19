@@ -1,0 +1,197 @@
+/* Navigation Bar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6f61; /* Soft red color for navbar */
+    padding: 10px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .Appname h2 {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar .nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-items button {
+    margin-left: 20px;
+    padding: 10px 15px;
+    background-color: white;
+    color: #ff6f61; /* Match navbar background color */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .nav-items button:hover {
+    background-color: #e35d51; /* Darker shade on hover */
+}
+
+/* Container for cart icon and login button */
+.navbar .nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+/* Cart icon styling */
+.navbar .cart-icon {
+    position: relative;
+    cursor: pointer;
+    margin-left: 20px; /* Space between cart icon and login button */
+}
+
+/* Cart count styling */
+.navbar .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: white;
+    color: #ff6f61; /* Match navbar background color */
+    border-radius: 50%;
+    padding: 3px 7px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* Login button styling */
+.navbar .login-btn {
+    background-color: white;
+    color: #ff6f61; /* Match navbar background color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .login-btn:hover {
+    background-color: #e35d51; /* Darker shade on hover */
+}
+
+/* Search bar styling */
+.search-bar {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px 15px;
+    border: 2px solid #ff6f61; /* Match navbar background color */
+    border-radius: 5px 0 0 5px;
+    font-size: 1em;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #ff6f61; /* Match navbar background color */
+    border: none;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+
+
+/* Cart icon styling */
+.cart-icon {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.cart-icon:hover {
+    color: #f1c40f;
+}
+
+.cart-page {
+    padding: 20px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.cart-table th {
+    background-color: #ff6f61;
+    color: #333;
+    font-weight: bold;
+}
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.delivery-offers, .cart-totals {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.delivery-offers h3, .cart-totals h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.delivery-offers p {
+    margin: 5px 0;
+}
+
+.cart-totals {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cart-totals p {
+    margin: 0;
+}
+
+.cart-totals button {
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-totals button:hover {
+    background-color: #2e7d32;
+}

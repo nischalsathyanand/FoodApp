@@ -1,0 +1,96 @@
+/* General Layout */
+.admin-panel {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background-color:  #ff6f61;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+}
+
+/* Main Content Styling */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Product Table Styling */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.product-table th, .product-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.product-table th {
+    background-color: #ff6f61;
+    color: #333;
+}
+
+.product-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Button Styling */
+.edit-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    opacity: 0.9;
+}
+
+/* Logout Button Styling */
+.logout-btn {
+    background-color: white; /* Red background color */
+    color: #ff6f61;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.logout-btn:hover {
+    opacity: 0.9;
+}

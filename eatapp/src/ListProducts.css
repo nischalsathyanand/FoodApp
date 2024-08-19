@@ -1,0 +1,215 @@
+/* Container for the product list */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+    background-color: #f3f4f6; /* Light background color for better contrast */
+    box-sizing: border-box;
+}
+
+/* Style for each product item */
+.product-item {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    flex: 1 1 calc(33.33% - 20px); /* Adjusted to show 3 cards per row */
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    max-width: 300px; /* Control maximum width for better alignment */
+    overflow: hidden;
+}
+
+/* Hover effect for product items */
+.product-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Image styling */
+.product-item img {
+    max-width: 100%;
+    height: 200px; /* Adjusted height for images */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Product title and price styling */
+.product-item h3 {
+    font-size: 1.2em;
+    margin: 15px 0;
+    color: #333;
+    font-weight: 700; /* Bolder text for titles */
+    line-height: 1.4;
+}
+
+.product-item p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #777;
+}
+
+/* Discount label (e.g., 63% Off) */
+.discount-label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #ff6f61; /* Soft red for discount labels */
+    color: white;
+    padding: 6px 10px;
+    font-size: 0.85em;
+    font-weight: bold;
+    border-radius: 12px;
+    text-transform: uppercase;
+}
+
+/* Button styling */
+.add-to-cart-btn, .quantity-selector button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: white;
+    background-color: #ff6f61; /* Soft red color for buttons */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-to-cart-btn:hover, .quantity-selector button:hover {
+    background-color: #e35d51; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Quantity selector styling */
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.quantity-selector button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.4em;
+    line-height: 1;
+}
+
+.quantity-selector button:hover {
+    background-color: #e35d51; /* Darker shade on hover */
+}
+
+.quantity-selector span {
+    margin: 0 15px;
+    font-size: 1.3em;
+    font-weight: bold;
+    min-width: 35px;
+    text-align: center;
+}
+
+/* Filters container */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for filters */
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Category dropdown */
+.category-dropdown {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.category-dropdown:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+/* Search input and button */
+.search-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+.search-button {
+    padding: 10px 15px;
+    font-size: 1em;
+    color: white;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #e35d51;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .product-item {
+        flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 900px) {
+    .product-item {
+        flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .product-item {
+        flex: 1 1 calc(100% - 20px); /* 1 card per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        flex: 1 1 calc(100% - 20px); /* 1 card per row on very small screens */
+    }
+}
